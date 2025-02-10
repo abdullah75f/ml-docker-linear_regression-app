@@ -1,0 +1,39 @@
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+# Node.js dependencies  
+node_modules/  
+npm-debug.log  
+yarn.lock  
+package-lock.json  
+
+# Python dependencies  
+__pycache__/  
+*.pyc  
+*.pyo  
+*.pyd  
+.env  
+venv/  
+
+# Docker  
+*.log  
+docker-compose.override.yml  
+docker-volume/  
+.dockerignore  
+
+# IDE & System files  
+.vscode/  
+.idea/  
+.DS_Store  
+Thumbs.db  
+
+# Build files  
+dist/  
+build/  
+coverage/  
+
+# Model & Data  
+*.pkl  
+*.h5  
+*.csv  
+*.json  

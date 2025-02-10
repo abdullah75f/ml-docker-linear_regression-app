@@ -1,0 +1,36 @@
+version: "3"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    networks:
+      - app-network
+    depends_on:
+      - model # CHANGE: Ensure backend starts after model
+
+  model:
+    build:
+      context: ./model
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002" # CHANGE: Expose port for the model service
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend # Path to the frontend directory
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # Expose port 3000 for the frontend
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+networks:
+  app-network:
+    driver: bridge
