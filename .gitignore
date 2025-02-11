@@ -5,7 +5,7 @@ frontend/node_modules/
 node_modules/  
 npm-debug.log  
 yarn.lock  
-package-lock.json  
+
 
 # Python dependencies  
 __pycache__/  
@@ -36,4 +36,3 @@ coverage/
 *.pkl  
 *.h5  
 *.csv  
-*.json  
