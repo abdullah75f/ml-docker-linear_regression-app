@@ -22,6 +22,10 @@ Ensure you have the following installed:
 
 ## ⚙️ Setup Instructions
 
+### 0️⃣ Generate the Model
+
+Open the Docker Daeomon server from the Docker Desktop App
+
 ### 1️⃣ Generate the Model
 
 Navigate to the backend directory:
