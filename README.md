@@ -30,10 +30,10 @@ Navigate to the backend directory:
 cd backend
 ```
 
-Install Python dependencies:
+Install Node.js dependencies:
 
 ```sh
-pip install -r requirements.txt
+npm install
 ```
 
 Train the model:
