@@ -22,5 +22,5 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Save the model
-joblib.dump(model, 'model.pkl')
+joblib.dump(model, '../model/model.pkl')
 print("Model trained and saved as model.pkl")
